@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-b0x</title>
+    <style>
+        div {
+            border: solid 5px dodgerblue;
+            font-size: 40px;
+            margin: 5px;
+        }
+        .big{
+            text-align: center;
+            width: 100px;
+            font-size: 1.5em;
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse;
+            flex-direction: row;
+            width: 50%;
+            flex-wrap: wrap;
+            flex-wrap: wrap-reverse;
+            flex-grow: row wrap;
+            height: 200px;
+            flex-flow: column-reverse wrap;
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: center;
+            justify-content: space-around;
+            justify-content: space-between;
+
+            /*cross axis*/
+            height: 400px;
+            align-items: stretch;
+            align-items: baseline;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+
+            /* mais de uma linhs */
+            align-content: flex-start;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+       <div>1</div> 
+       <div>2</div> 
+       <div>3</div> 
+       <div class="big">4</div> 
+       <div>5</div> 
+       <div>6</div> 
+       <div>7</div> 
+       <div>8</div> 
+       <div>9</div> 
+       <div>10</div> 
+    </div>
+</body>
+</html>
